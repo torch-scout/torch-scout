@@ -47,7 +47,7 @@ jobs:
 
         # Type checking needs to resolve imports, so we keep it here
       - name: Run Ty
-        run: uv run ty check
+        run: uv run --with ty ty check
 
       - name: Run Tests
         run: uv run pytest tests/
